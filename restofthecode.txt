@@ -1,0 +1,271 @@
+
+        <div className="background2">
+            <h1 className="automatedParkingSystem"><span>Models</span></h1>
+            <div className="gridView">
+                <div className="gridItem">
+                     <div className="insideGridItem">
+                       <div className="imageContainer">
+                          <img src={carousel1} className="images" alt="images"/>
+                       </div>
+
+                       <div className="detailsAndButton">
+                          <h3>Rotary Smart Parking(Carousel)</h3>
+                          <p>
+                          Our most popular system. The Carousel is the perfect solution to park the maximum number of cars in the least amount of space.
+                          </p>
+                       </div>
+
+                       <div className="buttonContainer">
+                             <button>Learn More</button>
+                       </div>
+                    </div>
+                </div>
+
+                <div className="gridItem">
+                    <div className="insideGridItem">
+                      <div className="imageContainer">
+                            <img src={puzzle2} className="images" alt="images"/>
+                      </div>
+
+                      <div className="detailsAndButton">
+                          <h3>Puzzle System</h3>
+                          <p>
+                          The Puzzle is a great solution for podium style buildings. The Puzzle is similar to a Stacker system, except that each space is independently accessible, and does not require a valet attendant.
+                          </p>
+
+                      </div>
+
+                      
+                      <div className="buttonContainer">
+                             <button>Learn More</button>
+                         </div>
+                    </div>
+                </div>
+
+                <div className="gridItem">
+                     <div className="insideGridItem">
+                       <div className="imageContainer">
+                          <img src={doublestacker} className="images" alt="images"/>
+                       </div>
+
+                       <div className="detailsAndButton">
+                          <h3>Double Stacker VSS7-LP Low Rise Ceiling</h3>
+                          <p>
+                          The Double Stacker is the best solution to immediately double your parking capacity. Best for use in valet attended type parking.
+                          </p>
+                       </div>
+
+                       <div className="buttonContainer">
+                             <button>Learn More</button>
+                       </div>
+                    </div>
+                </div>
+
+                <div className="gridItem">
+                     <div className="insideGridItem">
+                       <div className="imageContainer">
+                          <img src={singlepost} className="images" alt="images"/>
+                       </div>
+
+                       <div className="detailsAndButton">
+                          <h3>Single-Post Double Stacker</h3>
+                          <p>
+                          The Double Stacker is the best solution to immediately double your parking capacity. Best for use in valet attended type parking.
+                          </p>
+                       </div>
+
+                       <div className="buttonContainer">
+                             <button>Learn More</button>
+                       </div>
+                    </div>
+                </div>
+
+                <div className="gridItem">
+                     <div className="insideGridItem">
+                       <div className="imageContainer">
+                          <img src={twinpost} className="images" alt="images"/>
+                       </div>
+
+                       <div className="detailsAndButton">
+                          <h3>Twin-Post Double Stacker</h3>
+                          <p>
+                          The Double Stacker is the best solution to immediately double your parking capacity. Best for use in valet attended type parking.
+                          </p>
+                       </div>
+
+                       <div className="buttonContainer">
+                             <button>Learn More</button>
+                       </div>
+                    </div>
+                </div>
+
+                <div className="gridItem">
+                     <div className="insideGridItem">
+                       <div className="imageContainer">
+                          <img src={doublestackerscissor} className="images" alt="images"/>
+                       </div>
+
+                       <div className="detailsAndButton">
+                          <h3>Double Stacker VSS-7X Scissor Lifter</h3>
+                          <p>
+                          The Double Stacker is the best solution to immediately double your parking capacity. Best for use in valet attended type parking.
+                          </p>
+                       </div>
+
+                       <div className="buttonContainer">
+                             <button>Learn More</button>
+                       </div>
+                    </div>
+                </div>
+
+                <div className="gridItem">
+                     <div className="insideGridItem">
+                       <div className="imageContainer">
+                          <img src={triplequad} className="images" alt="images"/>
+                       </div>
+
+                       <div className="detailsAndButton">
+                          <h3>Triple and Quadruple</h3>
+                          <p>
+                          The Triple Stacker allows you to park three cars, in the space of one. Best for use in valet attended type parking. Then, The Quad Stacker allows you to park four cars in the space of one. Best for use in valet attended type parking.
+                          </p>
+                       </div>
+
+                       <div className="buttonContainer">
+                             <button>Learn More</button>
+                       </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            {/* ................... */}
+            {/* <h1 className="automatedParkingSystem"><span>Mechanical</span> Parking Systems</h1>
+            <div className="gridView">
+                <div className="gridItem">
+                     <div className="insideGridItem">
+                       <div className="imageContainer">
+                          <img src={doublestacker} className="images" alt="images"/>
+                       </div>
+
+                       <div className="detailsAndButton">
+                          <h3>DOUBLE STACKER</h3>
+                          <p>
+                          The Double Stacker is the best solution to immediately double your parking capacity. Best for use in valet attended type parking.
+                          </p>
+                       </div>
+
+                       <div className="buttonContainer">
+                             <button>Learn More</button>
+                       </div>
+                    </div>
+                </div>
+
+                <div className="gridItem">
+                    <div className="insideGridItem">
+                      <div className="imageContainer">
+                            <img src={triplestacker} className="images" alt="images"/>
+                      </div>
+
+                      <div className="detailsAndButton">
+                          <h3>TRIPLE STACKER</h3>
+                          <p>
+                          The Triple Stacker allows you to park three cars, in the space of one. Best for use in valet attended type parking.
+                          </p>
+
+                      </div>
+
+                      
+                      <div className="buttonContainer">
+                             <button>Learn More</button>
+                         </div>
+                    </div>
+                </div>
+
+                <div className="gridItem">
+                    <div className="insideGridItem">
+                      <div className="imageContainer">
+                              <img src={quadstacker} className="images" alt="images"/>
+                        </div>
+
+                        <div className="detailsAndButton">
+                              <h3>QUAD STACKER</h3>
+                              <p>
+                              The Quad Stacker allows you to park four cars in the space of one. Best for use in valet attended type parking.
+                              </p>
+                          
+                        </div>
+                        <div className="buttonContainer">
+                                <button>Learn More</button>
+                          </div>
+                      </div>
+                </div>
+
+                <div className="gridItem">
+                   <div className="insideGridItem">
+                    <div className="imageContainer">
+                              <img src={pitlift} className="images" alt="images"/>
+                        </div>
+                        <div className="detailsAndButton">
+                           <h3>PIT LIFT</h3>
+                           <p>
+                           The Pit Lift is designed to lower vehicles underground to one level, where the top level can be camouflaged with ground level landscaping.
+                           </p>
+          
+                        </div>
+
+                        <div className="buttonContainer">
+                                <button>Learn More</button>
+                              </div>
+
+                  </div>
+                </div>
+            </div> */}
+        </div>
+    
+
+      
+     
+      <div className="background3">
+          <div className="abovebackground3">
+                <div className="emptydiv">
+
+                </div>
+
+                <div className="divWithText">
+                      <h2 className="aboutParkmtic">About Ramec-Egypt</h2>
+                      <p className="firstp">Ramec-Egypt, The first Egyptian company specialized in manufacturing smart parking systems. <br></br>Different models introduced by Ramec-Egypt represent an efficient and more valuable alternative for traditional parking systems. <br></br>The factory also introduce installation and after sales services.</p>
+                      <p className="secondp">At Ramec-Egypt, we believe that our clients can have the best Creative Design, Cost Efficiency, and Exceptional Client Service. Our company focuses on maximum parking efficiencies at the most cost savings.  </p>
+                     
+                        <a href='Ramec_Egypt_Presentation.pdf' download="Ramec Egypt Presentation.pdf"><div className="iconMargin"><FontAwesomeIcon icon={faFilePdf} size="1x"/> </div>Learn More</a>
+                     
+                </div>
+          </div>
+      </div>
+
+      {/* <div className="projectContainer">
+        <div className="projectImageContainer" id="1" style={{backgroundImage:`url(${background1})`}}>
+            
+         <img src={background1} className="imageBackground"/> 
+         <img src={background1} className="imageBackground"/>
+         <img src={background1} className="imageBackground"/>
+        </div>
+
+      
+      </div> */}
+
+
+      <div className="background32">
+          <div className="abovebackground3">
+          <div className="divWithText2">
+                      <h2 className="aboutParkmtic">Why Ramec-Egypt ?</h2>
+                      <p className="firstp">Ramec-Egypt is manfucturing and developing with international qualtiy and standrization using Korean techologies.<br></br>It offers free installment to the system and free engineering and mechanical consultancy.<br></br>It offers excellent after sale services and 10 years insurance to the metallic sekeleton.</p>
+                        <a href='Ramec_Egypt_Presentation.pdf' download="Ramec Egypt Presentation.pdf"><div className="iconMargin"><FontAwesomeIcon icon={faFilePdf} size="1x"/> </div>Learn More</a>
+                     
+                </div>
+                <div className="emptydiv2">
+
+                </div>
+          </div>
+      </div>

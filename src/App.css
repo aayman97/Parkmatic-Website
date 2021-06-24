@@ -7,7 +7,7 @@
   --white: #ffffff;
 }
 .App{
-  position: relative;
+position: relative;
 }
 .backgroud1{
   background : url("background1.jpg");
@@ -38,8 +38,18 @@
   z-index: 4;
   border-bottom: 1px solid transparent;
   transition: top 0.2s linear;
-  
 } 
+.logo{
+  width : 100px;
+  height: 100px;
+  object-fit: contain;
+  cursor: pointer;
+  filter : invert(1)
+}
+.rightSideContainer{
+  display: flex;
+  position: relative;
+}
 li{
   display: flex;
   justify-content: center;
@@ -60,6 +70,23 @@ ul{
   margin-right: 25px;
   text-transform: uppercase;
   /* animation: textColor 1s forwards; */
+}
+.navbar li .navbarButtonsBack {
+  list-style: none;
+  text-decoration: none;
+  color : #c5c3c4;
+  font-family: sans-serif;
+  font-weight: 200;
+  font-size: 0.9rem;
+  margin-right: 25px;
+  text-transform: uppercase;
+  /* animation: textColor 1s forwards; */
+  display: none;
+}
+.navbar li .navbarButtonsBack:hover {
+  
+  color : rgba(128, 128, 128, 0.76);
+
 }
 .navbarButtons::after{
   display:block;
@@ -104,7 +131,7 @@ padding-bottom: 10px;
 
   flex-direction: column;
   position: absolute;
-  background-color: #f1edf0;
+  background: rgba(210,41,35,0.9);
   justify-content: center;
   align-items: center;
   top : 70px;
@@ -200,19 +227,20 @@ padding : 20px;
   cursor: pointer;
 }
 .gridView{
- width : 70%;
+ width : 65%;
  height: 35%;
  background-color: white;
  display: grid;
- gap: 10px;
+ grid-row-gap: 100px;
+ grid-column-gap: 20px;
  grid-template-columns: repeat(4,1fr);
  align-items: center;
  justify-content: center;
  margin-top: 50px;
 }
 .gridItem{
-  width:268px;
-  height: 98%;
+  width:300px;
+  height: 520px;
   background-color: #f1ecf3c2;
   display: flex;
   align-items: center;
@@ -236,7 +264,7 @@ padding : 20px;
 .images{
   width:100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: fill;
   cursor: pointer;
 }
 .detailsAndButton{
@@ -250,6 +278,9 @@ padding : 20px;
 .detailsAndButton h3{
   font-weight: 500;
   margin-top: 20px;
+  text-align: center;
+  height : 42px;
+  font-size: 1rem;
 }
 .detailsAndButton h3:hover{
   color: #1db913;
@@ -289,6 +320,233 @@ padding : 20px;
   border: 3px solid #1db913;
   transition: color 0.5s linear,border 0.5s linear ;
   cursor: pointer;
+}
+
+.background3{
+  background-image: url("background3.jpg");
+  width : 100%;
+  height: 75vh;
+  background-position: top;
+  background-size: auto;
+}
+.background32{
+  background-image: url("background32.jpg");
+  width : 100%;
+  height: 75vh;
+  background-position: top;
+  background-size: contain;
+  margin-top: 1px;
+}
+.abovebackground3{
+  width:100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+}
+.emptydiv{
+  flex-basis: 50%;
+
+}
+.divWithText{
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem 2rem;
+}
+.divWithText2{
+  flex-basis: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem 5rem;
+}
+.emptydiv2{
+  flex-basis: 40%;
+
+}
+.aboutParkmtic{
+  font-size: 3rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  color : white
+}
+.firstp{
+  color : white;
+  width: 70%;
+  font-weight: 300;
+  line-height: 1.5rem;
+  margin-top: 30px;
+  letter-spacing: 0.05rem;
+}
+
+.secondp{
+  color : white;
+  width: 71%;
+  font-weight: 100;
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+  margin-top: 30px;
+  letter-spacing: 0.05rem;
+}
+.divWithText button{
+  background-color: transparent; 
+  border: 3px solid rgba(255, 255, 255, 0.712);
+  border-radius: 30px;
+  color: white;
+  padding: 12px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 50px;
+  width :25%
+}
+
+.divWithText button:hover{
+  color: #1db913;
+  border: 3px solid #1db913;
+  transition: color 0.25s linear,border 0.5s linear ;
+  cursor: pointer;
+}
+.divWithText a{
+  background-color: transparent; 
+  border: 3px solid rgba(255, 255, 255, 0.712);
+  border-radius: 30px;
+  color: white;
+  padding: 12px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 50px;
+  width :20%;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+}
+.divWithText a:hover{
+  color: #1db913;
+  border: 3px solid #1db913;
+  transition: color 0.25s linear,border 0.5s linear ;
+  cursor: pointer;
+}
+
+.divWithText2 a{
+  background-color: transparent; 
+  border: 3px solid rgba(255, 255, 255, 0.712);
+  border-radius: 30px;
+  color: white;
+  padding: 12px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 50px;
+  width :15%;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+}
+.divWithText2 a:hover{
+  color: #1db913;
+  border: 3px solid #1db913;
+  transition: color 0.25s linear,border 0.5s linear ;
+  cursor: pointer;
+}
+.iconMargin{
+  margin-right: 10px;
+}
+.contactUsDiv{
+  width : 100%;
+  height: 7vh;
+  background-color: rgba(201, 201, 201, 0.658);
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap : 50px;
+}
+.logoword{
+  width : 100px;
+  height: 80%;
+  object-fit: contain;
+  transition: 1s linear;
+}
+.icon{
+  width:50px;
+  height: 50px;
+  object-fit: contain;
+}
+.numbersAndEmails{
+  display: flex;
+  width : 600px;
+  /* align-items: center;
+  justify-content: flex-end; */
+
+}
+.contactUsWord{
+  font-size: 1.5rem;
+
+}
+.numbers{
+  height: 100%;
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+.numbers h4{
+  margin-top: 5px;
+}
+.iconStyle{
+  margin-right: 10px;
+}
+.phoneiconStyle{
+  margin-right: 10px;
+}
+.contactUsWord{
+  margin-bottom: 20px;
+}
+.stayInContact{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.stayInContact h4 {
+  font-size: 1.5rem
+}
+.iconCircle{
+  margin-top: 10px;
+}
+.iconCircle img{
+  opacity: 0.5;
+  cursor: pointer;
+}
+.iconCircle img:hover{
+  opacity: 1;
+  transition: opacity 0.2s linear;
+}
+.projectContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  width: 100%;
+}
+.projectImageContainer{
+  width: 100%;
+  height: 100%;
+}
+.imageBackground{
+  height: 100%;
+  width: 100%;
+  object-position: center;
+  object-fit: contain;
 }
 @keyframes bottomborder {
   from {opacity: 0;}
@@ -346,4 +604,135 @@ padding : 20px;
 @keyframes logoAnimationBack {
   from{color : black}
   to{color : white}
+}
+
+@media screen and (max-width: 480px)  {
+  .App{
+    position: relative;
+    }
+ 
+  .backgroud1{
+    background : url("background1.jpg");
+    width : 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+  }
+  .navbarAndmiddleTextContainer{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgb(0, 0, 0,0.4);
+    display: flex;
+    flex-direction: column;
+  }
+  .navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+    align-items: center;
+    /* background-color:transparent;  */
+    width : 97.5%;
+    height: 100px;
+    top : 10px;
+    position: fixed;
+    z-index: 4;
+    border-bottom: 1px solid transparent;
+    transition: top 0.2s linear;
+  } 
+  .logo{
+    width : 50px;
+    height: 50px;
+    object-fit: contain;
+    cursor: pointer;
+    filter : invert(1)
+  }
+  .rightSideContainer{
+    display: flex;
+    position: relative;
+  }
+  .rightSideContainer ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top : 65px;
+    height: 89.5vh;
+    background-color: #eacb2eb6;
+    width : 280px;
+    transform: translateX(-210px);
+    border-radius: 10px;
+    font-weight: bold;
+    transition: transform 1s linear;
+  }
+.navbarButtonsBack{
+  display: block;
+}
+.menuHover{
+
+}
+.navbarButtons::after{
+  display:block;
+  content: '';
+  border-bottom: 3px solid transparent; 
+  transform: scaleX(0);  
+  transition: transform 250ms ease-in-out;
+  position: relative;
+  top:10px;
+  opacity: 0;
+
+}
+.navbar li .navbarButtons {
+  list-style: none;
+  text-decoration: none;
+  color : black;
+  font-family: sans-serif;
+  font-weight: 200;
+  font-size: 1rem;
+  margin-right: 25px;
+  text-transform: uppercase;
+  /* animation: textColor 1s forwards; */
+}
+
+.navbar li .navbarButtonsBack {
+  list-style: none;
+  text-decoration: none;
+  color : #c5c3c4;
+  font-family: sans-serif;
+  font-weight: 200;
+  font-size: 0.9rem;
+  margin-right: 25px;
+  text-transform: uppercase;
+  /* animation: textColor 1s forwards; */
+  display: block;
+}
+.submenu{
+  flex-direction: column;
+  position: absolute;
+  background: rgba(210,41,35,0.9);
+  justify-content: center;
+  align-items: center;
+  top : 40px;
+  display: none;
+  animation: submenuAnimation 1s forwards;
+  z-index: 2;
+  padding: 5px;
+  border-radius: 10px;
+}
+.navbarButtonsBack {
+  list-style: none;
+  text-decoration: none;
+  color : #c5c3c4;
+  font-family: sans-serif;
+  font-weight: 200;
+  font-size: 0.9rem;
+  margin-right: 25px;
+  text-transform: uppercase;
+  /* animation: textColor 1s forwards; */
+  display: none;
+}
+.navbarButtonsBack:hover{
+  color: #c5c3c4;
+}
 }
