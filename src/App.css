@@ -1,0 +1,1379 @@
+*{
+  margin : 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+:root {
+  --white: #ffffff;
+}
+.App{
+position: relative;
+}
+.backgroud1{
+  background : url("background1.jpg");
+  width : 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.navbarAndmiddleTextContainer{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgb(0, 0, 0,0.4);
+  display: flex;
+  flex-direction: column;
+}
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  padding: 0rem 2rem;
+  align-items: center;
+  /* background-color:transparent;  */
+  width : 97.5%;
+  height: 100px;
+  top : 10px;
+  position: fixed;
+  z-index: 4;
+  border-bottom: 1px solid transparent;
+  transition: top 0.2s linear;
+} 
+.logo{
+  width : 100px;
+  height: 100px;
+  object-fit: contain;
+  filter : invert(1)
+}
+.rightSideContainer{
+  display: flex;
+  position: relative;
+}
+li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.submenuIcon{
+  display: flex;
+  list-style: none;
+}
+.navbar li .navbarButtons {
+  list-style: none;
+  text-decoration: none;
+  color : #c5c3c4;
+  font-family: sans-serif;
+  font-weight: 200;
+  font-size: 0.9rem;
+  margin-right: 25px;
+  text-transform: uppercase;
+  cursor: pointer;
+  /* animation: textColor 1s forwards; */
+}
+.navbarButtonsBack {
+  list-style: none;
+  text-decoration: none;
+  color : #c5c3c4;
+  font-family: sans-serif;
+  font-weight: 200;
+  font-size: 0.9rem;
+  margin-right: 25px;
+  text-transform: uppercase;
+  /* animation: textColor 1s forwards; */
+  display: none;
+ 
+}
+.navbar li .navbarButtonsBack:hover {
+  
+  color : white;
+
+}
+.navbarButtons::after{
+  display:block;
+  content: '';
+  border-bottom: 3px solid transparent; 
+  transform: scaleX(1);  
+  transition: transform 250ms ease-in-out;
+  position: relative;
+  top:10px;
+  opacity: 0;
+
+}
+li{
+  height: 100px;
+}
+.notamenu:hover{
+color:white;
+border-bottom :3px solid white;
+padding-bottom: 10px;
+
+}
+.menu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 17px;
+}
+
+.menuHover:hover .submenu{
+  display: flex;
+}
+.menuHover:hover .navbarButtons:after{
+  border-bottom :3px solid var(--white);
+  animation: bottomborder 1s forwards;
+ 
+}
+.menuHover a:hover{
+  color : white
+}
+.arrowDown{ font-size:10px;left:2;position:relative;display: none;}
+.submenu{
+
+  flex-direction: column;
+  position: absolute;
+  background: submenu;
+  justify-content: center;
+  align-items: center;
+  top : 70px;
+  display: none;
+  animation: submenuAnimation 1s forwards;
+  z-index: 2;
+  padding: 5px;
+  background-color: #E81F25;
+}
+.submenu a{
+padding : 20px;
+  text-align: center;
+  font-size: 0.9rem;
+  text-decoration: none;
+  font-family: sans-serif;
+  color : #d3d0d1;
+  font-weight: bold;
+  margin-right: 20px;
+  
+}
+.submenu a:hover{
+  color : black
+}
+.wholeLogo{
+  color: white;
+  cursor: pointer;
+  /* animation: logoAnimation 1s forwards; */
+}
+.ThePlogo{
+  color: #1db913;
+  font-family: sans-serif;
+  font-size: 2.5rem;
+  letter-spacing: -5px;
+}
+.middleText{
+  position: relative;
+  top : 40%;
+  z-index: 0;
+ align-self: center;
+ text-align: center;
+}
+.moreParking{
+  font-size: 3rem;
+  font-weight: 400;
+  color: white;
+}
+.moreParking span{
+  font-weight: bold;
+}
+.firstSentence{
+  font-size: 1.05rem;
+  color : #c5c3c4;
+  font-weight: 100;
+  letter-spacing: 0.02rem;
+  font-weight: 200;
+  margin-top: 25px;
+}
+.firstSentence span{
+  color : #eacc2e;
+  font-weight: bold;
+}
+.secondSentence{
+  font-size: 1.05rem;
+  color : #c5c3c4;
+  font-weight: 100;
+  letter-spacing: 0.03rem;
+  font-weight: 200;
+  margin-top: 7.5px;
+}
+.secondSentence span{
+  color : white;
+  font-weight: bold;
+}
+
+.background2{
+  width:100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 180vh;
+  padding-bottom: 5%;
+}
+
+
+.automatedParkingSystem{
+  font-size: 2.5rem;
+  font-weight: 100;
+  margin-top: 100px;
+}
+.automatedParkingSystem span{
+  font-weight: bold;
+}
+.automatedParkingSystem:hover{
+  color: #1db913;
+  transition: color 0.2s linear;
+  cursor: pointer;
+}
+.gridView{
+ width : 65%;
+ height: 35%;
+ background-color: white;
+ display: grid;
+ grid-row-gap: 100px;
+ grid-column-gap: 20px;
+ grid-template-columns: repeat(3,1fr);
+ align-items: center;
+ justify-content: center;
+ margin-top: 50px;
+}
+.gridItem{
+  width:300px;
+  height: 520px;
+  background-color: #f1ecf3c2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.insideGridItem{
+  width:97%;
+  height: 98%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.imageContainer{
+  flex-basis: 40%;
+  background-color: aqua;
+  display: flex;
+}
+
+.images{
+  width:100%;
+  height: 100%;
+  object-fit: fill;
+}
+.detailsAndButton{
+  flex-basis: 40%;
+  background-color: #f1ecf3ef;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.detailsAndButton h3{
+  font-weight: 500;
+  margin-top: 20px;
+  text-align: center;
+  height : 42px;
+  font-size: 1rem;
+}
+.detailsAndButton h3:hover{
+  color: #1db913;
+  transition: color 0.2s linear;
+  cursor: pointer;
+}
+.detailsAndButton p{
+  text-align: center;
+  padding: 0rem 1.5rem;
+  font-weight: 100;
+  color: rgba(0, 0, 0, 0.329);
+  font-size: 0.9rem;
+  line-height: 1.32rem;
+  margin-top: 10px;
+}
+.buttonContainer{
+  background-color: #f1ecf3ef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 20%;
+}
+.learnmore{
+  background-color: transparent; 
+  border: 3px solid #1212134b;
+  border-radius: 30px;
+  color: #1212134b;
+  padding: 9px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+}
+.learnmore:hover{
+  color: #1db913;
+  border: 3px solid #1db913;
+  transition: color 0.5s linear,border 0.5s linear ;
+  cursor: pointer;
+}
+
+.background3{
+  background-image: url("background1-sora.jpeg");
+  width : 100%;
+  height: 100vh;
+  background-position: top;
+  background-size: contain;
+}
+.background32{
+  background-image: url("background32.jpg");
+  width : 100%;
+  height: 75vh;
+  background-position: top;
+  background-size: contain;
+  margin-top: 1px;
+}
+.abovebackground3{
+  width:100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+}
+.emptydiv{
+  flex-basis: 50%;
+}
+.divWithText{
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem 2rem;
+}
+.divWithText2{
+  flex-basis: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem 5rem;
+}
+.emptydiv2{
+  flex-basis: 40%;
+
+}
+.aboutParkmtic{
+  font-size: 3rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  color : white
+}
+.firstp{
+  color : white;
+  width: 70%;
+  font-weight: 300;
+  line-height: 1.5rem;
+  margin-top: 30px;
+  letter-spacing: 0.05rem;
+}
+
+.secondp{
+  color : white;
+  width: 71%;
+  font-weight: 100;
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+  margin-top: 30px;
+  letter-spacing: 0.05rem;
+}
+.divWithText button{
+  background-color: transparent; 
+  border: 3px solid rgba(255, 255, 255, 0.712);
+  border-radius: 30px;
+  color: white;
+  padding: 12px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 50px;
+  width :25%
+}
+
+.divWithText button:hover{
+  color: #1db913;
+  border: 3px solid #1db913;
+  transition: color 0.25s linear,border 0.5s linear ;
+  cursor: pointer;
+}
+.divWithText a{
+  background-color: transparent; 
+  border: 3px solid rgba(255, 255, 255, 0.712);
+  border-radius: 30px;
+  color: white;
+  padding: 12px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 50px;
+  width :20%;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+}
+.divWithText a:hover{
+  color: #1db913;
+  border: 3px solid #1db913;
+  transition: color 0.25s linear,border 0.5s linear ;
+  cursor: pointer;
+}
+
+.divWithText2 a{
+  background-color: transparent; 
+  border: 3px solid rgba(255, 255, 255, 0.712);
+  border-radius: 30px;
+  color: white;
+  padding: 12px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 50px;
+  width :15%;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+}
+.divWithText2 a:hover{
+  color: #1db913;
+  border: 3px solid #1db913;
+  transition: color 0.25s linear,border 0.5s linear ;
+  cursor: pointer;
+}
+.iconMargin{
+  margin-right: 10px;
+}
+.contactUsDiv{
+  width : 100%;
+  height: 7vh;
+  background-color: rgba(201, 201, 201, 0.658);
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap : 50px;
+}
+.logoword{
+  width : 100px;
+  height: 80%;
+  object-fit: contain;
+  transition: 1s linear;
+}
+.icon{
+  width:50px;
+  height: 50px;
+  object-fit: contain;
+}
+.numbersAndEmails{
+  display: flex;
+  width : 600px;
+  /* align-items: center;
+  justify-content: flex-end; */
+
+}
+.contactUsWord{
+  font-size: 1.5rem;
+
+}
+.numbers{
+  height: 100%;
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+.numbers h4{
+  margin-top: 5px;
+}
+.iconStyle{
+  margin-right: 10px;
+}
+.phoneiconStyle{
+  margin-right: 10px;
+}
+.contactUsWord{
+  margin-bottom: 20px;
+}
+.stayInContact{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.stayInContact h4 {
+  font-size: 1.5rem
+}
+.iconCircle{
+  margin-top: 10px;
+}
+.iconCircle img{
+  opacity: 0.5;
+  cursor: pointer;
+}
+.iconCircle img:hover{
+  opacity: 1;
+  transition: opacity 0.2s linear;
+}
+.projectContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  width: 100%;
+  margin-top: 50px;
+   margin-bottom: 20px;
+   
+}
+.projectImageContainer{
+  width: 100%;
+  height: 100%;
+}
+.imageBackground{
+  height: 100%;
+  width: 100%;
+  object-position: center;
+  object-fit: contain;
+}
+.SwiperContainer{
+  width:100%;
+  height: 140vh;
+  display: flex;
+  /* background-color: #a3786bb4; */
+  /* border-top: 3px solid rgba(0, 0, 0, 0.281); */
+  flex-direction: column;
+  background-color: rgba(201, 201, 201, 0.658);
+ 
+}
+.projectContainer{
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  flex-direction: row;
+}
+.projectImages{
+flex-basis: 40%;
+height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.projectData{
+  flex-basis: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  font-family: 'Roboto', sans-serif;
+}
+.locationName{
+  font-size: 3rem;
+  font-family: 'Roboto', sans-serif;
+}
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 60%;
+  height: 80%;
+  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 70%;
+  height: 80%;
+  object-fit: fit;
+  border-radius: 10px;
+}
+.locationDiv{
+  display: flex;
+  align-items: center;
+  margin-top: 10%;
+  text-decoration: none;
+  color : rgba(0, 0, 0, 0.76)
+}
+.locationIcon{
+  width:30px;
+  height: 30px;
+  object-fit: fill;
+}
+.locationDetails{
+  margin-left: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+.forAnyMoreContact{
+  width :100%;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logoword1{
+  width : 200px;
+  height: 70px;
+  object-fit: fill;
+}
+.contactDetails{
+  display: flex;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.contactDetails a{
+  text-decoration: none;
+  color : black
+}
+.contactDetailsContainer{
+  display: flex;
+  align-items: center;
+}
+@keyframes bottomborder {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes submenuAnimation {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes colorNavBarAnimation {
+  from {background-color: transparent; 
+    border-bottom: 1px solid transparent;
+    
+  }
+  to{
+    background-color: #c3a35fe7; 
+    border-bottom: 1px solid #c3a35fe7;
+    
+  }
+}
+
+@keyframes colorNavBarAnimationBack {
+  0%{
+    background-color: #c3a35fe7; 
+    border-bottom: 1px solid #c3a35fe7;
+  }
+  20% {background-color: transparent; 
+    border-bottom: 1px solid transparent;
+    
+  }
+  100% {background-color: transparent; 
+    border-bottom: 1px solid transparent;
+    
+  }
+  
+}
+
+@keyframes textColor {
+  from{color : #131212}
+  to{color : black}
+}
+
+@keyframes textColorBack {
+  from{color : black}
+  to{color : #c5c3c4}
+
+}
+
+@keyframes logoAnimation {
+  from{color : white}
+  to{color : black}
+}
+@keyframes logoAnimationBack {
+  from{color : black}
+  to{color : white}
+}
+
+@media screen and (max-width: 798px)  {
+  .App{
+    position: relative;
+    }
+ 
+  .backgroud1{
+    background : url("background1.jpg");
+    width : 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+  }
+  .navbarAndmiddleTextContainer{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgb(0, 0, 0,0.4);
+    display: flex;
+    flex-direction: column;
+  }
+  .navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+    align-items: center;
+    /* background-color:transparent;  */
+    width : 97.5%;
+    height: 100px;
+    top : 10px;
+    position: fixed;
+    z-index: 4;
+    border-bottom: 1px solid transparent;
+    transition: top 0.2s linear;
+    background: rgba( 255, 255, 255, 0.05 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+  } 
+  .logo{
+    width : 70px;
+    height: 70px;
+    object-fit: contain;
+    cursor: pointer;
+    filter : invert(0)
+  }
+  .rightSideContainer{
+    display: flex;
+    position: relative;
+  }
+  .submenuIcon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top : 0px;
+    height: 100vh;
+    background-color: #c3a35ff5;
+    width : 280px;
+    transform: translateX(60px);
+    border-radius: 10px;
+    font-weight: bold;
+    transition: transform 0.2s linear;
+    padding-top: 20px;
+  }
+  .submenuIcon li a {
+    color : white
+  }
+  .navbar li .navbarButtons {
+  list-style: none;
+  text-decoration: none;
+  color : black;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-right: 25px;
+  text-transform: uppercase;
+
+  /* animation: textColor 1s forwards; */
+}
+.navbarButtonsBack{
+  display: block;
+  z-index: 100;
+  
+}
+.navbarButtons:active{
+  color : white
+}
+.menuHover{
+
+}
+.navbarButtons::after{
+  display:block;
+  content: '';
+  border-bottom: 3px solid transparent; 
+  transform: scaleX(0);  
+  transition: transform 250ms ease-in-out;
+  position: relative;
+  top:10px;
+  opacity: 0;
+
+}
+.navbarButtons {
+  list-style: none;
+  text-decoration: none;
+  color : black;
+  font-family: sans-serif;
+  font-weight: 200;
+  font-size: 1rem;
+  margin-right: 25px;
+  text-transform: uppercase;
+  font-weight: bold;
+  /* animation: textColor 1s forwards; */
+}
+
+.navbar li .navbarButtonsBack {
+  list-style: none;
+  text-decoration: none;
+  color : #c5c3c4;
+  font-family: sans-serif;
+  font-weight: 200;
+  font-size: 0.9rem;
+  margin-right: 25px;
+  text-transform: uppercase;
+  /* animation: textColor 1s forwards; */
+  display: block;
+}
+.arrowDown{ font-size:20px;left:20;position:relative;display: none;}
+.submenu{
+  flex-direction: column;
+  position: absolute;
+  background: rgba(210,41,35,0.9);
+  justify-content: center;
+  align-items: center;
+  top : -20px;
+  display: none;
+  animation: submenuAnimation 1s forwards;
+  z-index: 99;
+  padding: 5px;
+  border-radius: 10px;
+  height: 100vh;
+}
+.navbarButtonsBack {
+  list-style: none;
+  text-decoration: none;
+  color : #c5c3c4;
+  font-family: sans-serif;
+  font-weight: 200;
+  font-size: 0.9rem;
+  margin-right: 25px;
+  text-transform: uppercase;
+  /* animation: textColor 1s forwards; */
+  display: none;
+}
+.navbarButtonsBack:hover{
+  color: #c5c3c4;
+}
+.moreParking{
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: white;
+}
+.moreParking span{
+  font-weight: bold;
+}
+.firstSentence{
+  font-size: 0.75rem;
+  color : #c5c3c4;
+  font-weight: 100;
+  letter-spacing: 0.02rem;
+  font-weight: 200;
+  margin-top: 25px;
+}
+.firstSentence span{
+  color : #eacc2e;
+  font-weight: bold;
+}
+.secondSentence{
+  font-size: 0.75rem;
+  color : #c5c3c4;
+  font-weight: 100;
+  letter-spacing: 0.03rem;
+  font-weight: 200;
+  margin-top: 7.5px;
+}
+.secondSentence span{
+  color : white;
+  font-weight: bold;
+}
+.middleText{
+  position: relative;
+  top : 40%;
+  z-index: 0;
+ align-self: center;
+ text-align: center;
+}
+.background2{
+  width:100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: max-content;
+  
+}
+.gridView{
+ width : 100%;
+ height: max-content;
+ display: grid;
+ gap: 0px;
+ grid-template-columns: repeat(1,1fr);
+}
+.gridItem{
+  width:100%;
+  height: 700px;
+  background-color: #f1ecf3c2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.imageContainer{
+  flex-basis: 10%;
+  background-color: aqua;
+  display: flex;
+}
+.learnmore{
+  background-color: transparent; 
+  border: 3px solid #1212134b;
+  border-radius: 30px;
+  color: #1212134b;
+  padding: 12px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  cursor: pointer;
+ display: flex;
+}
+.detailsAndButton h3{
+  font-weight: 500;
+  margin-top: 10px;
+  text-align: center;
+  height : 30px;
+  font-size: 0.9rem;
+}
+.detailsAndButton p{
+  text-align: center;
+  padding: 0rem 1.5rem;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.329);
+  font-size: 0.8rem;
+  line-height: 1.32rem;
+  margin-top: 5px;
+}
+.imageContainer{
+  flex-basis: 40%;
+  background-color: aqua;
+  display: flex;
+}
+
+.images{
+  width:100%;
+  height: 100%;
+  object-fit: fill;
+  cursor: pointer;
+}
+.background3{
+  background-image: url("background1-sora.jpeg");
+  width : 100%;
+  height: 75vh;
+  background-position: left;
+  background-size: cover;
+  padding: 0%;
+}
+.abovebackground3{
+  width:100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.753);
+  display: flex;
+}
+.emptydiv{
+  /* flex-basis: 50%; */
+  display: none;
+}
+.divWithText{
+  flex-basis: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* padding: 1rem 2rem; */
+  align-items: center;
+}
+br{
+  display: none;
+}
+.aboutParkmtic{
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  color : white;
+  width: 100%;
+  
+}
+.firstp{
+  color : white;
+  width: 100%;
+  font-weight: 300;
+  line-height: 1.45rem;
+  margin-top: 20px;
+  letter-spacing: 0.05rem;
+  font-size: 0.7rem;
+}
+
+.secondp{
+  color : white;
+  width: 100%;
+  font-weight: 100;
+  font-size: 0.6rem;
+  line-height: 1.45rem;
+  margin-top: 20px;
+  letter-spacing: 0.05rem;
+}
+.divWithText a{
+  background-color: transparent; 
+  border: 3px solid rgba(255, 255, 255, 0.712);
+  border-radius: 30px;
+  color: white;
+  padding: 13px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  cursor: pointer;
+  margin-top: 20px;
+  width :40%;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+}
+.divWithText a:hover{
+  color: white;
+  border: 3px solid rgba(255, 255, 255, 0.712);
+  transition: color 0.25s linear,border 0.5s linear ;
+  cursor: pointer;
+}
+.background32{
+  background-image: url("background32.jpg");
+  width : 100%;
+  height: 75vh;
+  background-position: left;
+  background-size: auto;
+  padding: 0%;
+}
+
+.divWithText2{
+  flex-basis: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0rem 2rem;
+  
+}
+.emptydiv2{
+  /* flex-basis: 40%; */
+  display: none;
+}
+.divWithText2 a{
+    background-color: transparent; 
+  border: 3px solid rgba(255, 255, 255, 0.712);
+  border-radius: 30px;
+  color: white;
+  padding: 13px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  cursor: pointer;
+  margin-top: 20px;
+  width :40%;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+.divWithText2 a:hover{
+  color: white;
+  border: 3px solid rgba(255, 255, 255, 0.712);
+  transition: color 0.25s linear,border 0.5s linear ;
+  cursor: pointer;
+}
+.SwiperContainer{
+  width:100%;
+  height: 140vh;
+  display: flex;
+  /* background-color: #a3786bb4; */
+  /* border-top: 3px solid rgba(0, 0, 0, 0.281); */
+  flex-direction: column;
+  background-color: rgba(201, 201, 201, 0.658);
+ 
+}
+.projectContainer{
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  margin-top: 15%;
+}
+.projectImages{
+flex-basis: 40%;
+height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.projectData{
+  flex-basis: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0rem;
+  font-family: 'Roboto', sans-serif;
+}
+/* .projectContainer h1{
+  font-size: 30px;
+} */
+.locationName{
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+  align-self: center;
+  margin-top: 2%;
+}
+.swiper-container {
+  width: 80%;
+  height: 100%;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 60%;
+  height: 80%;
+  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 70%;
+  height: 80%;
+  object-fit: fit;
+  border-radius: 10px;
+}
+.locationDiv{
+  display: flex;
+  align-items: center;
+  margin-top:5%;
+  text-decoration: none;
+  color : rgba(0, 0, 0, 0.76);
+  /* align-self: center; */
+}
+.locationIcon{
+  width:20px;
+  height: 20px;
+  object-fit: fill;
+}
+.locationDetails{
+  margin-left: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  
+}
+.forAnyMoreContact{
+  width :100%;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.logoword1{
+  width : 200px;
+  height: 70px;
+  object-fit: fill;
+  margin-top: 20px;
+}
+.contactDetails{
+  display: flex;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.contactDetails a{
+  text-decoration: none;
+  color : black
+}
+.contactDetailsContainer{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 70%;
+  justify-content: space-around;
+}
+}
+@media screen and (min-width: 799px) and (max-width: 1274px) {
+  .background2{
+    width:100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 310vh;
+    /* padding-bottom: 5%; */
+  }
+  .gridView{
+    width : 100%;
+    height: max-content;
+    display: grid;
+    gap: 0px;
+    grid-template-columns: repeat(3,1fr);
+   }
+   .gridItem{
+    width:90%;
+    height: 500px;
+    background-color: #f1ecf3c2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .background3{
+    background-image: url("background3.jpg");
+    width : 100%;
+    height: 100vh;
+    background-position: top;
+    background-size: cover;
+    background-color: aqua;
+  }
+  .emptydiv{
+    flex-basis: 40%;
+  }
+  br{
+    display: none;
+  }
+  .abovebackground3{
+    width:100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+  
+  }
+  .aboutParkmtic{
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    color : white;
+    
+  }
+  .firstp{
+    color : white;
+    width: 70%;
+    font-weight: 300;
+    line-height: 1.5rem;
+    margin-top: 30px;
+    letter-spacing: 0.05rem;
+    font-size: 0.8rem;
+  }
+  
+  .secondp{
+    color : white;
+    width: 71%;
+    font-weight: 100;
+    font-size: 0.7rem;
+    line-height: 1.2rem;
+    margin-top: 30px;
+    letter-spacing: 0.05rem;
+  }
+  .learnmore{
+    background-color: transparent; 
+    border: 3px solid #1212134b;
+    border-radius: 30px;
+    color: #1212134b;
+    padding: 9px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+    display: flex;
+  }
+  .learnmore:hover{
+    color: #1212134b;
+    border: 3px solid #1212134b;
+    transition: color 0.5s linear,border 0.5s linear ;
+    cursor: pointer;
+  }
+  .detailsAndButton p{
+    text-align: center;
+    padding: 0rem 1.5rem;
+    font-weight: 100;
+    color: rgba(0, 0, 0, 0.329);
+    font-size: 0.8rem;
+    line-height: 1.32rem;
+    margin-top: 10px;
+  }
+  .divWithText{
+    flex-basis: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+    height: 100%;
+  }
+  .divWithText a{
+    background-color: transparent; 
+    border: 3px solid rgba(255, 255, 255, 0.712);
+    border-radius: 30px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 50px;
+    width :30%;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+  }
+  .divWithText a:hover{
+    color: white;
+    border: 3px solid rgba(255, 255, 255, 0.712);
+    transition: color 0.25s linear,border 0.5s linear ;
+    cursor: pointer;
+  }
+  .divWithText2 a{
+    background-color: transparent; 
+  border: 3px solid rgba(255, 255, 255, 0.712);
+  border-radius: 30px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  cursor: pointer;
+  margin-top: 20px;
+  width :30%;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+
+}
+.divWithText2 a:hover{
+  color: white;
+  border: 3px solid rgba(255, 255, 255, 0.712);
+  transition: color 0.25s linear,border 0.5s linear ;
+  cursor: pointer;
+}
+}
