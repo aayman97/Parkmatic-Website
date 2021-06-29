@@ -198,18 +198,18 @@ function App() {
                 <a className="navbarButtons" id="navbutton1" onClick={()=> {
                   if(window.screen.width>798 && window.screen.width<1274){
              window.scrollTo({
-                top : window.innerHeight*4.1+window.innerHeight*1.33,
+                top : window.innerHeight*4.1+window.innerHeight*1.425,
                 behavior:'smooth'
               })
                   }
                   else if(window.screen.width<798){
             window.scrollTo({
-                top : 5250+window.innerHeight*1.33,
+                top : 5250+window.innerHeight*1.425,
                 behavior:'smooth'
               })}
               else{
                 window.scrollTo({
-                  top : window.innerHeight*2.9 +window.innerHeight*1.33,
+                  top : window.innerHeight*2.9 +window.innerHeight*1.425,
                   behavior:'smooth'
                 })
               }
@@ -224,18 +224,18 @@ function App() {
               <li className="menuHover"><a className="navbarButtons" id="navbutton6" onClick={()=> {
                   if(window.screen.width>798 && window.screen.width<1274){
              window.scrollTo({
-                top : window.innerHeight*4.1+window.innerHeight*1.33+window.innerHeight*1.1,
+                top : window.innerHeight*4.1+window.innerHeight*1.33+window.innerHeight*1.12,
                 behavior:'smooth'
               })
                   }
                   else if(window.screen.width<798){
             window.scrollTo({
-                top : 5250+window.innerHeight*1.33+window.innerHeight*1.1,
+                top : 5250+window.innerHeight*1.33+window.innerHeight*1.12,
                 behavior:'smooth'
               })}
               else{
                 window.scrollTo({
-                  top : window.innerHeight*2.9 +window.innerHeight*1.33+window.innerHeight*1.1,
+                  top : window.innerHeight*2.9 +window.innerHeight*1.33+window.innerHeight*1.12,
                   behavior:'smooth'
                 })
               }
@@ -548,7 +548,7 @@ function App() {
                       <h1 className="locationName"> El Zohour Sporting Club</h1>
                       <a href="https://goo.gl/maps/vfWgtTdE5ydjE93f9" target="_blank" className="locationDiv">
                         <img src={location} className="locationIcon"/>
-                       <h4 className="locationDetails">Youssef Abbas Street, Al Estad, Nasr City, Cairo Governorate</h4>
+                       <h4 className="locationDetails">Youssef Abbas Street, Nasr City, Cairo Governorate</h4>
                        </a>
               </div>
             </div>
@@ -636,7 +636,7 @@ function App() {
 <img src={logoword} className="logoword1"/>
 
 <div className="contactDetailsContainer">
-<h4>Contact Us: </h4>
+<h4 className="contactWord">Contact Us: </h4>
 <h5 className="contactDetails"><div className="iconMargin"><FontAwesomeIcon icon={faEnvelope} size="1x"/></div><a href = "mailto: info@ramec-eg.com">info@ramec-eg.com</a></h5>
 <h5 className="contactDetails"><div className="iconMargin"><FontAwesomeIcon icon={faPhoneAlt} size="1x"/></div><a href="tel:+20226989511">+202 26989511</a></h5>
 <h5 className="contactDetails"><div className="iconMargin"><FontAwesomeIcon icon={faMobileAlt} size="1x"/></div><a href="tel:+201113649876">+2 01113649876</a></h5>

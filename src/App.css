@@ -327,18 +327,18 @@ padding : 20px;
 }
 
 .background3{
-  background-image: url("background1-sora.jpeg");
+  background-image: url("background3.jpg");;
   width : 100%;
   height: 100vh;
   background-position: top;
-  background-size: contain;
+  background-size: cover;
 }
 .background32{
   background-image: url("background32.jpg");
   width : 100%;
   height: 75vh;
   background-position: top;
-  background-size: contain;
+  background-size: cover;
   margin-top: 1px;
 }
 .abovebackground3{
@@ -982,7 +982,7 @@ backdrop-filter: blur( 4px );
   cursor: pointer;
 }
 .background3{
-  background-image: url("background1-sora.jpeg");
+  background-image: url("background3.jpg");
   width : 100%;
   height: 75vh;
   background-position: left;
@@ -1107,7 +1107,7 @@ br{
 }
 .SwiperContainer{
   width:100%;
-  height: 140vh;
+  height: 148vh;
   display: flex;
   /* background-color: #a3786bb4; */
   /* border-top: 3px solid rgba(0, 0, 0, 0.281); */
@@ -1123,7 +1123,7 @@ br{
   margin-top: 15%;
 }
 .projectImages{
-flex-basis: 40%;
+flex-basis: 50%;
 height: 100%;
   display: flex;
   align-items: center;
@@ -1131,13 +1131,14 @@ height: 100%;
 
 }
 .projectData{
-  flex-basis: 60%;
+  flex-basis: 50%;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 0rem;
   font-family: 'Roboto', sans-serif;
+  margin-top: 50px;
 }
 /* .projectContainer h1{
   font-size: 30px;
@@ -1149,7 +1150,7 @@ height: 100%;
   margin-top: 2%;
 }
 .swiper-container {
-  width: 80%;
+  width: 100%;
   height: 100%;
 }
 
@@ -1166,7 +1167,7 @@ height: 100%;
 
 .swiper-slide img {
   display: block;
-  width: 70%;
+  width: 80%;
   height: 80%;
   object-fit: fit;
   border-radius: 10px;
